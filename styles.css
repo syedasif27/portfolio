@@ -7,15 +7,15 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #121212;
-  color: #f0f0f0;
+  background-color: rgba(249, 241, 241, 0.81);
+  color: #cdc9c9;
   line-height: 1.6;
 }
 
 h1, h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  color: #fff;
+  color: #e90505;
 }
 
 h2 {
@@ -26,8 +26,8 @@ h2 {
 
 /* Header (Hero Section) */
 .hero {
-  background: linear-gradient(135deg, #1a73e8, #b4e1f7);
-  color: #fff;
+  background: linear-gradient, rgb(221, 10, 10) 52.1%, #b4e1f7);
+  color: #dd0c0c;
   padding: 60px 20px;
   text-align: center;
   border-bottom: 5px solid #1a73e8;
@@ -59,7 +59,7 @@ h2 {
 
 /* About Section */
 .about {
-  background-color: #1f1f1f;
+  background-color: #060606;
   padding: 40px 20px;
   margin-top: -20px;
   border-radius: 8px;
@@ -68,13 +68,13 @@ h2 {
 
 .about p {
   font-size: 1.1rem;
-  color: #ddd;
+  color: #e7e4e4;
   margin-top: 15px;
 }
 
 /* Certifications Section */
 .certifications {
-  background-color: #1f1f1f;
+  background-color: #000000;
   padding: 40px 20px;
   border-radius: 8px;
   margin-top: 40px;
@@ -92,17 +92,17 @@ h2 {
   background-color: #282828;
   margin: 10px 0;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s cubic-bezier(0.28, 0.13, 0.25, 1);
 }
 
 .certifications li:hover {
-  background-color: #1a73e8;
+  background-color: #cc1818;
   color: #fff;
 }
 
 /* Contact Section */
 .contact {
-  background-color: #1f1f1f;
+  background-color: #000000;
   padding: 40px 20px;
   margin-top: 40px;
   border-radius: 8px;
@@ -119,14 +119,14 @@ h2 {
 }
 
 .contact a {
-  color: #1a73e8;
+  color: #d0d3d6;
   font-size: 1.2rem;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .contact a:hover {
-  color: #ffcc00;
+  color: #cc1b09;
 }
 
 /* Footer */
@@ -135,7 +135,7 @@ footer {
   background-color: #121212;
   padding: 20px 0;
   margin-top: 40px;
-  color: #aaa;
+  color: #e60606;
 }
 
 footer p {
