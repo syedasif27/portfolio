@@ -4,100 +4,87 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Syed Asif | Linux & DevOps Engineer</title>
-
   <meta name="description" content="Linux System Engineer | DevOps | Infrastructure & Security">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header class="hero">
-  <div class="glass hero-box">
-    <img src="syedasif.jpg" alt="Syed Asif" class="profile-img">
-    <h1>Syed Asif</h1>
-    <p class="tagline">Linux • DevOps • Infrastructure • Security</p>
+<canvas id="bg"></canvas>
 
-    <div class="hero-actions">
-      <a href="#projects" class="btn glow">Projects</a>
-      <a href="Syed_Asif_Linux_DevOps.pdf" class="btn outline" download>Resume</a>
-    </div>
+<!-- Terminal Intro -->
+<div id="terminal">
+  <pre id="terminal-text"></pre>
+</div>
+
+<!-- Main Content -->
+<div id="content" class="hidden">
+
+<header class="hero glass">
+  <img src="syedasif.jpg" class="profile-img" alt="Syed Asif">
+  <h1>Syed Asif</h1>
+  <p class="tagline">Linux • DevOps • Infrastructure • Security</p>
+
+  <div class="actions">
+    <a href="#projects" class="btn glow">Projects</a>
+    <a href="Syed_Asif_Linux_DevOps.pdf" class="btn outline" download>Resume</a>
   </div>
 </header>
 
 <main>
 
-<section class="section">
+<section>
   <h2>About</h2>
   <p class="lead">
-    I design, secure, and operate Linux infrastructure.
-    From high-availability mail systems to monitoring stacks and
-    secure networking, I focus on reliability, clarity, and scale.
+    I build and operate Linux infrastructure.
+    High availability, monitoring, security hardening,
+    and clean system design are my focus.
   </p>
 </section>
 
-<section class="section">
+<section>
   <h2>Core Skills</h2>
   <div class="grid">
     <div class="card">Linux / RHEL / Rocky / Ubuntu</div>
     <div class="card">Docker / Proxmox / HAProxy</div>
     <div class="card">Prometheus / Grafana / Loki</div>
     <div class="card">IPsec / GRE / iptables</div>
-    <div class="card">OpenLDAP / Postfix / Dovecot</div>
+    <div class="card">OpenLDAP / Mail Systems</div>
     <div class="card">MariaDB / Redis / Nextcloud</div>
   </div>
 </section>
 
-<section id="projects" class="section">
-  <h2>Selected Projects</h2>
+<section id="projects">
+  <h2>Projects</h2>
 
   <div class="project">
     <h3>HA iRedMail Infrastructure</h3>
-    <p>
-      Production-style mail system with LDAP replication, HAProxy,
-      and GlusterFS shared storage across servers.
-    </p>
-    <span class="stack">LDAP • HAProxy • GlusterFS • Postfix</span>
+    <p>LDAP replication, HAProxy, GlusterFS shared mail storage.</p>
+    <span>LDAP • HAProxy • GlusterFS</span>
   </div>
 
   <div class="project">
-    <h3>Centralized Monitoring Platform</h3>
-    <p>
-      Metrics and logs across multiple servers using Prometheus,
-      Grafana, Loki, and Promtail.
-    </p>
-    <span class="stack">Prometheus • Grafana • Loki</span>
+    <h3>Monitoring & Logging Platform</h3>
+    <p>Prometheus, Grafana dashboards, Loki log aggregation.</p>
+    <span>Prometheus • Grafana • Loki</span>
   </div>
 
   <div class="project">
-    <h3>Nextcloud High Availability</h3>
-    <p>
-      Scalable Nextcloud deployment with Galera DB cluster,
-      Redis caching, and Apache PHP-FPM.
-    </p>
-    <span class="stack">Nextcloud • Galera • Redis</span>
+    <h3>Nextcloud HA Setup</h3>
+    <p>Galera cluster, Redis caching, Apache PHP-FPM.</p>
+    <span>Nextcloud • Galera • Redis</span>
   </div>
 
   <div class="project">
-    <h3>IPsec + GRE Secure Tunneling</h3>
-    <p>
-      Site-to-site secure routing lab using StrongSwan,
-      GRE tunneling, and firewall hardening.
-    </p>
-    <span class="stack">IPsec • GRE • iptables</span>
+    <h3>IPsec + GRE Lab</h3>
+    <p>Secure site-to-site routing with StrongSwan.</p>
+    <span>IPsec • GRE • iptables</span>
   </div>
 </section>
 
-<section class="section">
-  <h2>Certifications</h2>
-  <ul class="certs">
-    <li>RHCSA – Red Hat Certified System Administrator</li>
-    <li>Cisco Cyber Security</li>
-    <li>Networking Essentials</li>
-  </ul>
-</section>
-
-<section class="section">
+<section>
   <h2>Contact</h2>
   <div class="links">
     <a href="https://www.linkedin.com/in/syedasif27" target="_blank">LinkedIn</a>
@@ -112,5 +99,8 @@
   <p>© 2026 Syed Asif</p>
 </footer>
 
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
