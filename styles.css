@@ -22,10 +22,10 @@ h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
 
-header.hero {
+.hero {
   background: linear-gradient(135deg, #cc1818, #1a73e8);
   color: white;
-  padding: 80px 20px;
+  padding: 90px 20px;
   text-align: center;
 }
 
@@ -73,19 +73,15 @@ section {
   gap: 20px;
 }
 
-.card {
+.card, .project {
   background: white;
-  padding: 20px;
+  padding: 22px;
   border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
 }
 
 .project {
-  background: white;
-  padding: 25px;
-  border-radius: 8px;
   margin-bottom: 30px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .project ul {
