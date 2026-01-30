@@ -1,107 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Syed Asif | Linux & DevOps Engineer</title>
-  <meta name="description" content="Linux System Engineer | DevOps | Infrastructure & Security">
-
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Syed Asif | Terminal Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<canvas id="bg"></canvas>
-
-<!-- Terminal Intro -->
 <div id="terminal">
-  <pre id="terminal-text"></pre>
-</div>
-
-<!-- Main Content -->
-<div id="content" class="hidden">
-
-<header class="hero glass">
-  <img src="syedasif.jpg" class="profile-img" alt="Syed Asif">
-  <h1>Syed Asif</h1>
-  <p class="tagline">Linux • DevOps • Infrastructure • Security</p>
-
-  <div class="actions">
-    <a href="#projects" class="btn glow">Projects</a>
-    <a href="Syed_Asif_Linux_DevOps.pdf" class="btn outline" download>Resume</a>
+  <pre id="output"></pre>
+  <div class="input-line">
+    <span class="prompt">syed@infra:~$</span>
+    <input type="text" id="command" autofocus />
   </div>
-</header>
-
-<main>
-
-<section>
-  <h2>About</h2>
-  <p class="lead">
-    I build and operate Linux infrastructure.
-    High availability, monitoring, security hardening,
-    and clean system design are my focus.
-  </p>
-</section>
-
-<section>
-  <h2>Core Skills</h2>
-  <div class="grid">
-    <div class="card">Linux / RHEL / Rocky / Ubuntu</div>
-    <div class="card">Docker / Proxmox / HAProxy</div>
-    <div class="card">Prometheus / Grafana / Loki</div>
-    <div class="card">IPsec / GRE / iptables</div>
-    <div class="card">OpenLDAP / Mail Systems</div>
-    <div class="card">MariaDB / Redis / Nextcloud</div>
-  </div>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="project">
-    <h3>HA iRedMail Infrastructure</h3>
-    <p>LDAP replication, HAProxy, GlusterFS shared mail storage.</p>
-    <span>LDAP • HAProxy • GlusterFS</span>
-  </div>
-
-  <div class="project">
-    <h3>Monitoring & Logging Platform</h3>
-    <p>Prometheus, Grafana dashboards, Loki log aggregation.</p>
-    <span>Prometheus • Grafana • Loki</span>
-  </div>
-
-  <div class="project">
-    <h3>Nextcloud HA Setup</h3>
-    <p>Galera cluster, Redis caching, Apache PHP-FPM.</p>
-    <span>Nextcloud • Galera • Redis</span>
-  </div>
-
-  <div class="project">
-    <h3>IPsec + GRE Lab</h3>
-    <p>Secure site-to-site routing with StrongSwan.</p>
-    <span>IPsec • GRE • iptables</span>
-  </div>
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <div class="links">
-    <a href="https://www.linkedin.com/in/syedasif27" target="_blank">LinkedIn</a>
-    <a href="https://github.com/syedasif27" target="_blank">GitHub</a>
-    <a href="mailto:calltoasif27@gmail.com">Email</a>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <p>© 2026 Syed Asif</p>
-</footer>
-
 </div>
 
 <script src="script.js" defer></script>
-<!--<script src="script.js"></script><-->
 </body>
 </html>

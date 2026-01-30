@@ -1,116 +1,40 @@
-*{margin:0;padding:0;box-sizing:border-box}
-
-:root{
-  --bg:#020617;
-  --glass:rgba(255,255,255,0.08);
-  --text:#e5e7eb;
-  --muted:#9ca3af;
-  --accent:#38bdf8;
+* {
+  box-sizing: border-box;
 }
 
-body{
-  font-family:Inter,sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  overflow-x:hidden;
+body {
+  margin: 0;
+  background: #000;
+  color: #22c55e;
+  font-family: 'JetBrains Mono', monospace;
 }
 
-canvas#bg{
-  position:fixed;
-  inset:0;
-  z-index:-1;
+#terminal {
+  padding: 20px;
+  min-height: 100vh;
 }
 
-.glass{
-  backdrop-filter:blur(14px);
-  background:var(--glass);
-  border:1px solid rgba(255,255,255,0.15);
-  border-radius:20px;
+.prompt {
+  color: #38bdf8;
 }
 
-#terminal{
-  position:fixed;
-  inset:0;
-  background:black;
-  color:#22c55e;
-  font-family:"JetBrains Mono",monospace;
-  padding:30px;
-  font-size:1rem;
+.input-line {
+  display: flex;
+  align-items: center;
 }
 
-.hidden{display:none}
-
-.hero{
-  margin:120px auto 80px;
-  max-width:900px;
-  text-align:center;
-  padding:60px 40px;
+#command {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #22c55e;
+  font-family: inherit;
+  font-size: 1rem;
+  flex: 1;
+  margin-left: 8px;
 }
 
-.profile-img{
-  width:140px;height:140px;border-radius:50%;
-  border:3px solid var(--accent);
-  margin-bottom:20px;
-}
-
-.tagline{color:var(--muted);margin-top:10px}
-
-.actions{margin-top:30px}
-
-.btn{
-  padding:12px 26px;
-  border-radius:999px;
-  text-decoration:none;
-  font-weight:600;
-  margin:6px;
-}
-
-.btn.glow{
-  background:var(--accent);
-  color:black;
-  box-shadow:0 0 25px var(--accent);
-}
-
-.btn.outline{
-  border:2px solid var(--accent);
-  color:var(--accent);
-}
-
-section{
-  max-width:1000px;
-  margin:80px auto;
-  padding:0 20px;
-}
-
-h2{font-size:2rem;margin-bottom:20px}
-
-.lead{color:var(--muted);font-size:1.15rem}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:16px;
-}
-
-.card,.project{
-  background:var(--glass);
-  padding:20px;
-  border-radius:16px;
-}
-
-.project{margin-bottom:20px}
-
-.project span{color:var(--accent);font-size:.9rem}
-
-.links a{
-  margin-right:20px;
-  color:var(--accent);
-  text-decoration:none;
-  font-weight:600;
-}
-
-footer{
-  text-align:center;
-  padding:40px;
-  color:var(--muted);
+a {
+  color: #38bdf8;
+  text-decoration: none;
 }

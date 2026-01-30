@@ -1,57 +1,76 @@
-// Terminal typing effect
-const lines = [
-  'syed@infra:~$ whoami',
-  'Linux / DevOps Engineer',
-  '',
-  'syed@infra:~$ loading portfolio...',
-];
+const output = document.getElementById("output");
+const input = document.getElementById("command");
 
-let i = 0, j = 0;
-const speed = 40;
-const term = document.getElementById('terminal-text');
+const commands = {
+  help: () => `
+Available commands:
+- about
+- skills
+- projects
+- contact
+- clear
+`,
+  about: () => `
+Syed Asif
+Linux System Engineer | DevOps | Infrastructure
 
-function typeLine() {
-  if (i < lines.length) {
-    if (j < lines[i].length) {
-      term.textContent += lines[i][j++];
-      setTimeout(typeLine, speed);
-    } else {
-      term.textContent += '\n';
-      j = 0; i++;
-      setTimeout(typeLine, 500);
+Focused on high availability, monitoring,
+security hardening, and Linux internals.
+`,
+  skills: () => `
+Linux, RHEL, Rocky, Ubuntu
+Docker, Proxmox, HAProxy
+Prometheus, Grafana, Loki
+IPsec, GRE, iptables
+OpenLDAP, Postfix, Dovecot
+MariaDB, Redis, Nextcloud
+`,
+  projects: () => `
+1. HA iRedMail Infrastructure
+   - LDAP replication
+   - HAProxy load balancing
+   - GlusterFS shared storage
+
+2. Centralized Monitoring Stack
+   - Prometheus & Grafana
+   - Loki & Promtail
+
+3. Nextcloud High Availability
+   - Galera cluster
+   - Redis caching
+
+4. IPsec + GRE Lab
+   - StrongSwan
+   - Secure routing
+`,
+  contact: () => `
+LinkedIn: https://www.linkedin.com/in/syedasif27
+GitHub:   https://github.com/syedasif27
+Email:    calltoasif27@gmail.com
+`,
+};
+
+function print(text) {
+  output.textContent += text + "\n";
+  output.scrollTop = output.scrollHeight;
+}
+
+print("Welcome to Syed Asif's terminal portfolio");
+print("Type 'help' to see available commands\n");
+
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const cmd = input.value.trim();
+    print(`syed@infra:~$ ${cmd}`);
+
+    if (cmd === "clear") {
+      output.textContent = "";
+    } else if (commands[cmd]) {
+      print(commands[cmd]());
+    } else if (cmd !== "") {
+      print(`Command not found: ${cmd}`);
     }
-  } else {
-    setTimeout(() => {
-      document.getElementById('terminal').style.display = 'none';
-      document.getElementById('content').classList.remove('hidden');
-    }, 800);
+
+    input.value = "";
   }
-}
-typeLine();
-
-// Particle background
-const canvas = document.getElementById('bg');
-const ctx = canvas.getContext('2d');
-let w, h;
-function resize(){w=canvas.width=window.innerWidth;h=canvas.height=window.innerHeight}
-window.onresize=resize;resize();
-
-const particles = Array.from({length:80},()=>({
-  x:Math.random()*w,y:Math.random()*h,
-  vx:(Math.random()-.5)*0.4,vy:(Math.random()-.5)*0.4
-}));
-
-function draw(){
-  ctx.clearRect(0,0,w,h);
-  ctx.fillStyle='rgba(56,189,248,0.6)';
-  particles.forEach(p=>{
-    p.x+=p.vx;p.y+=p.vy;
-    if(p.x<0||p.x>w)p.vx*=-1;
-    if(p.y<0||p.y>h)p.vy*=-1;
-    ctx.beginPath();
-    ctx.arc(p.x,p.y,1.5,0,Math.PI*2);
-    ctx.fill();
-  });
-  requestAnimationFrame(draw);
-}
-draw();
+});
