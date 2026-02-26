@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 body {
   margin: 0;
   background: #000;
@@ -37,4 +38,122 @@ body {
 a {
   color: #38bdf8;
   text-decoration: none;
+=======
+:root {
+  --primary: #cc1818;
+  --dark: #121212;
+  --light: #f7f7f7;
+  --accent: #1a73e8;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--light);
+  color: #222;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  background: linear-gradient(135deg, #cc1818, #1a73e8);
+  color: white;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.hero-actions {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 5px;
+  display: inline-block;
+}
+
+.btn.primary {
+  background: white;
+  color: var(--primary);
+}
+
+.btn.outline {
+  border: 2px solid white;
+  color: white;
+}
+
+section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card, .project {
+  background: white;
+  padding: 22px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.project {
+  margin-bottom: 30px;
+}
+
+.project ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.badge-list {
+  list-style: none;
+}
+
+.badge-list li {
+  background: var(--dark);
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+}
+
+.links {
+  list-style: none;
+}
+
+.links li {
+  margin: 10px 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+>>>>>>> parent of 53ec35c (changes3)
 }
