@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 body {
   margin: 0;
   background: #000;
@@ -38,7 +37,6 @@ body {
 a {
   color: #38bdf8;
   text-decoration: none;
-=======
 :root {
   --primary: #cc1818;
   --dark: #121212;
@@ -155,5 +153,3 @@ footer {
   color: white;
   text-align: center;
   padding: 25px 0;
->>>>>>> parent of 53ec35c (changes3)
-}
