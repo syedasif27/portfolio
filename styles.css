@@ -1,3 +1,4 @@
+/* General Styles */
 * {
   box-sizing: border-box;
 }
@@ -46,33 +47,52 @@ a {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--light);
-  color: #222;
+  background-color: rgba(249, 241, 241, 0.81);
+  color: #cdc9c9;
   line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #e90505;
 }
 
 .hero {
   background: linear-gradient(135deg, #cc1818, #1a73e8);
   color: white;
   padding: 90px 20px;
+h2 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Header (Hero Section) */
+.hero {
+  background: linear-gradient, rgb(221, 10, 10) 52.1%, #b4e1f7);
+  color: #dd0c0c;
+  padding: 60px 20px;
   text-align: center;
+  border-bottom: 5px solid #1a73e8;
+}
+
+.hero-content {
+  position: relative;
 }
 
 .profile-img {
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 5px solid #fff;
   object-fit: cover;
   margin-bottom: 20px;
 }
 
-.hero-actions {
-  margin-top: 30px;
+.hero h1 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
 }
 
 .btn {
@@ -118,34 +138,78 @@ section {
 }
 
 .project ul {
+.hero p {
+  font-size: 1.3rem;
   margin-top: 10px;
-  padding-left: 20px;
+  font-weight: 400;
 }
 
-.badge-list {
-  list-style: none;
+/* About Section */
+.about {
+  background-color: #060606;
+  padding: 40px 20px;
+  margin-top: -20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.badge-list li {
-  background: var(--dark);
-  color: white;
+.about p {
+  font-size: 1.1rem;
+  color: #e7e4e4;
+  margin-top: 15px;
+}
+
+/* Certifications Section */
+.certifications {
+  background-color: #000000;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin-top: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.certifications ul {
+  list-style-type: none;
+}
+
+.certifications li {
+  font-size: 1.2rem;
+  color: #ddd;
   padding: 12px;
+  background-color: #282828;
   margin: 10px 0;
-  border-radius: 6px;
+  border-radius: 5px;
+  transition: background-color 0.3s cubic-bezier(0.28, 0.13, 0.25, 1);
 }
 
-.links {
-  list-style: none;
+.certifications li:hover {
+  background-color: #cc1818;
+  color: #fff;
 }
 
-.links li {
-  margin: 10px 0;
+/* Contact Section */
+.contact {
+  background-color: #000000;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.links a {
+.contact ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact li {
+  margin: 15px 0;
+}
+
+.contact a {
+  color: #d0d3d6;
+  font-size: 1.2rem;
   text-decoration: none;
-  color: var(--accent);
-  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 footer {
@@ -153,3 +217,21 @@ footer {
   color: white;
   text-align: center;
   padding: 25px 0;
+.contact a:hover {
+  color: #cc1b09;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #121212;
+  padding: 20px 0;
+  margin-top: 40px;
+  color: #e60606;
+}
+
+footer p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
