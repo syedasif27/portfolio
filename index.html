@@ -1,83 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Syed Asif | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syed Asif | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-  <header class="hero">
-    <div class="hero-content">
-      <!-- Profile Image -->
-      <img src="syedasif.jpg" alt="Syed Asif" class="profile-img">
-      <h1>Syed Asif</h1>
-      <p>Linux System Administrator & Web Developer</p>
-    </div>
-  </header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>Hi, I'm Syed Asif. I am a passionate Linux System Administrator and a skilled Web Developer with extensive experience in both fields. I enjoy optimizing systems and building seamless, user-friendly websites.</p>
-  </section>
+<header class="hero">
 
-  <section class="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>RHCSA (Red Hat Certified System Administrator)</li>
-      <li>Web Development</li>
-      <li>Network Essentials</li>
-      <li>Cyber Security</li>
-    </ul>
-  </section>
+<div class="hero-content">
 
-  <section class="contact">
-    <h2>Connect with Me</h2>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/syedasif27" target="_blank">LinkedIn</a></li>
-      <li><a href="https://github.com/syedasif27" target="_blank">GitHub</a></li>
-    </ul>
-  </section>
+<img src="syedasif.jpg" alt="Syed Asif" class="profile-img">
 
-  <footer>
-    <p>&copy; 2025 Syed Asif. All Rights Reserved.</p>
-  </footer>
+<h1>Syed Asif</h1>
+
+<p>Linux System Administrator & Web Developer</p>
+
+</div>
+
+</header>
+
+
+<section class="about">
+
+<h2>About Me</h2>
+
+<p>
+Hi, I'm Syed Asif. I am a passionate Linux System Administrator and a skilled Web Developer with extensive experience in both fields.
+I enjoy optimizing systems and building seamless, user-friendly websites.
+</p>
+
+</section>
+
+
+
+<section class="certifications">
+
+<h2>Certifications</h2>
+
+<ul>
+
+<li>RHCSA (Red Hat Certified System Administrator)</li>
+
+<li>Web Development</li>
+
+<li>Network Essentials</li>
+
+<li>Cyber Security</li>
+
+</ul>
+
+</section>
+
+
+
+<section class="contact">
+
+<h2>Connect with Me</h2>
+
+<ul>
+
+<li>
+<a href="https://www.linkedin.com/in/syedasif27" target="_blank">
+LinkedIn
+</a>
+</li>
+
+<li>
+<a href="https://github.com/syedasif27" target="_blank">
+GitHub
+</a>
+</li>
+
+</ul>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2025 Syed Asif | Linux Administrator</p>
+
+</footer>
+
+
+
+<!-- Dify Chatbot -->
+
 <script>
- window.difyChatbotConfig = {
-  token: 'iBjeDfDLognj6DwV',
-  baseUrl: 'https://dify-stage.duckdns.org',
-  inputs: {
-    // You can define the inputs from the Start node here
-    // key is the variable name
-    // e.g.
-    // name: "NAME"
-  },
-  systemVariables: {
-    // user_id: 'YOU CAN DEFINE USER ID HERE',
-    // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
-  },
-  userVariables: {
-    // avatar_url: 'YOU CAN DEFINE USER AVATAR URL HERE',
-    // name: 'YOU CAN DEFINE USER NAME HERE',
-  },
- }
+
+window.difyChatbotConfig = {
+
+token: 'iBjeDfDLognj6DwV',
+
+baseUrl: 'https://dify-stage.duckdns.org',
+
+}
+
 </script>
+
+
 <script
- src="https://dify-stage.duckdns.org/embed.min.js"
- id="iBjeDfDLognj6DwV"
- defer>
+src="https://dify-stage.duckdns.org/embed.min.js"
+id="iBjeDfDLognj6DwV"
+defer>
+
 </script>
+
+
+
 <style>
-  #dify-chatbot-bubble-button {
-    background-color: #1C64F2 !important;
-  }
-  #dify-chatbot-bubble-window {
-    width: 24rem !important;
-    height: 40rem !important;
-  }
+
+/* Chat Button */
+
+#dify-chatbot-bubble-button {
+
+background-color: #e90505 !important;
+
+box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+
+}
+
+
+
+/* Chat Window */
+
+#dify-chatbot-bubble-window {
+
+width: 380px !important;
+
+height: 520px !important;
+
+border-radius: 12px !important;
+
+font-family: 'Poppins', sans-serif !important;
+
+}
+
+
+/* Header */
+
+#dify-chatbot-bubble-window .header {
+
+background:#e90505 !important;
+
+color:white !important;
+
+}
+
+
+/* Messages */
+
+#dify-chatbot-bubble-window .message.assistant {
+
+background:#222 !important;
+
+color:white !important;
+
+}
+
+
+#dify-chatbot-bubble-window .message.user {
+
+background:#e90505 !important;
+
+color:white !important;
+
+}
+
 </style>
+
+
 </body>
 </html>
-
